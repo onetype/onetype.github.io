@@ -8,6 +8,11 @@
     "lint:styles": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "test": "npm run -s lint:styles"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm t"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/onetype/onetype.github.io.git"
@@ -26,6 +31,7 @@
   },
   "homepage": "https://github.com/onetype/onetype.github.io#readme",
   "devDependencies": {
+    "husky": "^3.0.5",
     "node-sass": "^4.12.0",
     "sass-lint": "^1.13.1"
   }
