@@ -1,0 +1,32 @@
+{
+  "name": "onetype",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The official documentation site for OneType.",
+  "main": "index.js",
+  "scripts": {
+    "lint:styles": "sass-lint --config .scss-lint.yml --verbose --no-exit",
+    "test": "npm run -s lint:styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onetype/onetype.github.io.git"
+  },
+  "keywords": [
+    "Data Science",
+    "Software Engineering",
+    "Mathematics",
+    "Blog",
+    "Publication"
+  ],
+  "author": "Kyo Euler <@kyoeuler>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onetype/onetype.github.io/issues"
+  },
+  "homepage": "https://github.com/onetype/onetype.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-lint": "^1.13.1"
+  }
+}
