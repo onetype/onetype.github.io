@@ -7,7 +7,8 @@
   "scripts": {
     "lint:scripts": "eslint --config .eslint.json **/*.js",
     "lint:styles": "sass-lint --config .scss-lint.yml --verbose --no-exit",
-    "test": "npm run -s lint:styles && npm run -s lint:scripts"
+    "pretest": "npm run -s lint:styles && npm run -s lint:scripts",
+    "test": "mocha tests/**.js"
   },
   "husky": {
     "hooks": {
@@ -34,8 +35,10 @@
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
+    "chai": "^4.2.0",
     "eslint": "^6.3.0",
     "husky": "^3.0.5",
+    "mocha": "^6.2.0",
     "node-sass": "^4.12.0",
     "sass-lint": "^1.13.1"
   }

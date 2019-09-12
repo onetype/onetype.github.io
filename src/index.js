@@ -1,1 +1,4 @@
-console.log('OneType by Kyo Euler.');
+module.exports = {
+  username: '@kyoeuler',
+  name: 'Kyo Euler'
+};
