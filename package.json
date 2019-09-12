@@ -8,7 +8,7 @@
     "lint:scripts": "eslint --config .eslint.json **/*.js",
     "lint:styles": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "pretest": "npm run -s lint:styles && npm run -s lint:scripts",
-    "test": "mocha tests/**.js"
+    "test": "mocha tests/**.js --require @babel/register"
   },
   "husky": {
     "hooks": {
@@ -34,7 +34,9 @@
   "homepage": "https://github.com/onetype/onetype.github.io#readme",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
     "chai": "^4.2.0",
     "eslint": "^6.3.0",
     "husky": "^3.0.5",

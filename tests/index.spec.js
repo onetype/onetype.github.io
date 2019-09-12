@@ -1,8 +1,8 @@
-const expect = require('chai').expect;
-const author = require('../src/index');
+import { expect } from 'chai';
+import author from '../src/index';
 
-describe('One Type', function() {
-  it('Art-Directed Blog, by Kyo Euler', function() {
+describe('One Type', () => {
+  it('Art-Directed Blog, by Kyo Euler', () => {
     const actual = author.username;
     const expected = '@kyoeuler';
 
