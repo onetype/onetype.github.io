@@ -1,6 +1,6 @@
 title: "OneType"
 description: "Art–Directed Publication about Data Science."
-baseurl: "/"
+baseurl: ""
 url: "https://onetype.org"
 author:
   name: "Kyo Euler"
@@ -8,3 +8,4 @@ author:
 
 markdown: kramdown
 theme: minima
+highlighter: pygments
