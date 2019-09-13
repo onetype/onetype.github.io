@@ -3,10 +3,14 @@
 // @import 'true';
 @import 'true';
 
+@import '../../_sass/theme/palette';
+
 // Components
 @import '../../_sass/functions/color.white';
+@import '../../_sass/functions/palette';
 
 // Tests
 @import './white.spec';
+@import './palette.spec';
 
 @include report;
