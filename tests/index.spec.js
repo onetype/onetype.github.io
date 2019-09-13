@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import author from '../src/index';
 
-describe('One Type', () => {
+describe('About', () => {
   it('Art-Directed Blog, by Kyo Euler', () => {
     const actual = author.username;
     const expected = '@kyoeuler';

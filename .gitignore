@@ -9,3 +9,12 @@ node_modules/
 
 # Coverage directory used by tools like Istambul
 coverage/
+
+# Jekyll Bundler folders
+_site/
+.sass-cache/
+.jekyll-metada
+
+# Ruby gems
+Gemfile
+Gemfile.lock
