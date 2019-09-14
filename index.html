@@ -1,23 +1,31 @@
 ---
 layout: default
+title: "Home"
+date: 2019-09-16T09:00:00+06:00
+cover: onetype.png
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class='center'>
+  <section class='home'>
+    <aside class='home__details'>
+      <ul>
+        <li>
+          <strong>About</strong>
+          <br />
+          <span>OneType</span>
+        </li>
+        <li>
+          <strong>Articles</strong>
+          <br />
+          <span>Art–Directed, Technical</span>
+        </li>
+        <li>
+          <strong>Archive</strong>
+          <br />
+          <span>Copyright 2019</span>
+        </li>
+      </ul>
+    </aside>
+    <main class='home__copy'></main>
+  </section>
 </div>
