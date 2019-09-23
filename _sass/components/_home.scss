@@ -1,0 +1,112 @@
+@charset 'utf-8';
+
+.home {
+  color: palette(tundora);
+  font-family: 'Akademie';
+  height: 100vh;
+
+  &__about {
+    padding: 0 64px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 728px) {
+      display: flex;
+      margin: 0 auto;
+      padding: 0;
+      width: 85%;
+    }
+
+    @media screen and (min-width: 1025px) {
+      margin: 0 auto;
+      width: 1010px;
+    }
+  }
+
+  &__details {
+    color: palette(friar-gray);
+    display: none;
+    font-size: calc(10px + .45vw);
+
+    @media screen and (min-width: 728px) {
+      display: block;
+      font-size: calc(9px + .45vw);
+      height: 100%;
+      transform: rotate(90deg);
+      transform-origin: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      position: relative;
+      top: -25px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: calc(6px + .45vw);
+      position: static;
+    }
+
+
+    strong {
+      color: black(1);
+      display: block;
+      font-size: calc(9px + .45vw);
+      font-variant-caps: all-small-caps;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__copy {
+    font-size: calc(18px + .45vw);
+
+    @media screen and (min-width: 1024px) {
+      font-size: calc(17px + .45vw);
+      margin-left: auto;
+      width: 330px;
+    }
+
+    p + p {
+      margin-top: 20px;
+    }
+
+    strong {
+      color: black(1);
+      font-style: normal;
+      font-variant-caps: all-small-caps;
+      font-weight: 500;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__author {
+    border-top: 2px solid rgba(palette(scorpion), 0.1); // sass-lint:disable-line no-color-literals
+    font-size: calc(14px + .45vw);
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 32px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: calc(12px + .45vw);
+    }
+  }
+}
