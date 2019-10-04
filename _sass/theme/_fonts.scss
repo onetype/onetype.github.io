@@ -46,7 +46,7 @@
   font-weight: normal;
   // sass-lint:disable indentation
   src: url('../assets/fonts/consolas/consolas.woff2') format('woff2'),
-       url('..assets/fonts/consolas/consolas.woff') format('woff');
+       url('../assets/fonts/consolas/consolas.woff') format('woff');
   // sass-lint:enable indentation
 }
 
@@ -66,4 +66,11 @@
   // sass-lint:disable indentation
   src: url('../assets/fonts/akademie/nb_akademie_std_medium-webfont.woff2') format('woff2');
   // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Alternate Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/alternate/Alternate-Gothic-No2.ttf') format('truetype');
 }

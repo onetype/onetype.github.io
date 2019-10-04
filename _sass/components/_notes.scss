@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+.note {
+  color: palette(go-ben);
+  font-family: 'Akademie';
+  font-size: 10px;
+  line-height: 1.4;
+
+  &__list {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0 5px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+      position: absolute;
+      right: -75%;
+      top: 0;
+      width: 200px;
+    }
+  }
+
+  &__number {
+    font-family: 'Alternate Gothic';
+    margin-right: 5px;
+  }
+
+  & + .note {
+    margin-top: 12px;
+  }
+
+  code {
+    font-size: inherit;
+  }
+}

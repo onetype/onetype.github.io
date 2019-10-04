@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+pre,
+code {
+  font-family: 'Consolas', 'Menlo', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0 auto;
+}
+
+.code {
+  background-color: palette(fantasy);
+
+  .chapter__copy {
+    margin-left: 185px;
+    width: auto;
+  }
+}
+
+.highlight {
+  .hll {
+    background-color: rgba(palette(cardinal), 0.2); // sass-lint:disable-line no-color-literals
+  }
+
+  .lineno,
+  .c1,
+  .cm {
+    color: rgba(palette(cardinal), 0.4); // sass-lint:disable-line no-color-literals
+  }
+
+  .lineno {
+    padding-left: 3px;
+    padding-right: 10px;
+  }
+
+  span,
+  .lineno {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+}
+
+.bg-lineno {
+  background-color: rgba(palette(cardinal), 0.2); // sass-lint:disable-line no-color-literals
+}

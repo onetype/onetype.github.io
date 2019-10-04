@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+.chapter {
+  font-size: 14px;
+  height: 100vh;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
+
+  @media screen and (min-width: 800px) {
+    padding: 0;
+  }
+
+  &__heading {
+    font-size: 15px;
+    font-style: italic;
+    font-variant-numeric: oldstyle-nums;
+    font-weight: 400;
+    margin: 20px 0 5px;
+  }
+
+  header,
+  &__page {
+    position: absolute;
+  }
+
+  header {
+    top: 20px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-style: italic;
+    font-variant-numeric: oldstyle-nums;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__date {
+    display: block;
+    font-family: 'Alternate Gothic';
+    font-size: 15px;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 2px;
+  }
+
+  &__title,
+  &__date {
+    line-height: 1;
+  }
+
+  &__copy {
+    margin-left: 320px;
+    margin-top: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+
+    aside + p {
+      text-indent: 20px;
+    }
+
+    p + p {
+      text-indent: 20px;
+
+      &.author {
+        margin-top: 20px;
+        text-indent: 0;
+      }
+    }
+  }
+
+  &__page {
+    bottom: 20px;
+    font-family: 'Alternate Gothic';
+    font-size: 11px;
+    font-weight: 400;
+
+    &.left {
+      left: 20px;
+    }
+
+    &.right {
+      right: 20px;
+    }
+
+    @media screen and (min-width: 800px) {
+      &.left {
+        left: 0;
+      }
+
+      &.right {
+        right: 0;
+      }
+    }
+  }
+
+  blockquote {
+    border-left: 6px solid palette(vanilla-ice);
+    margin: 20px 0 20px 15px;
+
+    p {
+      font-style: italic;
+      font-weight: 600;
+      margin-left: 15px;
+    }
+  }
+
+  blockquote + p {
+    text-indent: 20px;
+  }
+
+  .last {
+    &::after {
+      background-color: rgba(palette(cardinal), 0.2); //sass-lint:disable-line no-color-literals
+      content: '';
+      display: inline-block;
+      height: 9px;
+      margin-left: 2px;
+      width: 9px;
+    }
+  }
+}
