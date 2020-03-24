@@ -1,11 +1,15 @@
 ---
 layout: v1.default
-title: "Home"
 date: 2019-09-16T09:00:00+06:00
-cover: onetype.png
+open: true
 ---
 
 <div class='home'>
+  {% if page.open %}
+  <div class='message'>
+    <p>This site is being redesigned in the open.</p>
+  </div>
+  {% endif %}
   <section class='home__about'>
     <aside class='home__details'>
       <ul class='home__list'>
@@ -24,7 +28,7 @@ cover: onetype.png
       </ul>
     </aside>
     <main class='home__copy'>
-      <p>Human with a computer becomes the most efficient animal on the planet. Humans and data have been related forever. But, data is the only miracle. Data contains the past, it doesn’t invent the future. <strong>OneType</strong> is an art–directed publication where <strong>math</strong> meets beauty.</p>
+      <p>Human with a computer becomes the most efficient animal on the planet. Humans and data have been related forever. But, data is the only miracle. Data contains the past, it doesn’t invent the future. <strong>OneType</strong> is an art–directed publication about <strong>data science</strong>.</p>
       <p>Sure, it’s been done before. But not by <em>me</em>. And not for <em>us</em>.</p>
       <p class='home__author'>Kyo</p>
     </main>

@@ -9,6 +9,10 @@
   padding: 0 20px;
   position: relative;
 
+  &.alert {
+    height: calc(100vh - 21px);
+  }
+
   @media screen and (min-width: 800px) {
     padding: 0;
   }

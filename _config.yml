@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://onetype.org"
 author:
   name: "Kyo Euler"
-  username: "@kyoeuler"
+  username: "kyoeuler"
 
 markdown: kramdown
 theme: minima
