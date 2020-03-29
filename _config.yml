@@ -1,0 +1,11 @@
+title: "OneType"
+description: "Art–Directed Publication about Data Science."
+baseurl: ""
+url: "https://onetype.org"
+author:
+  name: "Kyo Euler"
+  username: "kyoeuler"
+
+markdown: kramdown
+theme: minima
+highlighter: pygments
