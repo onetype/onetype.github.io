@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.caps {
+  font-style: normal;
+  font-variant-caps: small-caps;
+  letter-spacing: 2px;
+}
+
+[show='mobile'] {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.message {
+  border-bottom: 1px solid rgba(palette(scorpion), 0.1); // sass-lint:disable-line no-color-literals
+  color: palette(go-ben);
+  font-family: 'Akademie';
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 3px 0;
+  text-align: center;
+
+  &.center {
+    font-size: 12px;
+    position: absolute;
+    top: calc(50% - 23px);
+    width: 100%;
+  }
+}

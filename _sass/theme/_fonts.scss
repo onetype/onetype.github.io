@@ -1,0 +1,76 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: normal;
+  font-weight: 400;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-regular.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-regular.woff') format('woff');
+  // sass-lint:enable indentation;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: italic;
+  font-weight: 400;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-italic.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-italic.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: normal;
+  font-weight: 600;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-semibold.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-semibold.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  font-style: italic;
+  font-weight: 600;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/caslon/adobe-caslon-pro-semibold-italic.woff2') format('woff2'),
+       url('../assets/fonts/caslon/adobe-caslon-pro-semibold-italic.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: normal;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/consolas/consolas.woff2') format('woff2'),
+       url('../assets/fonts/consolas/consolas.woff') format('woff');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Akademie';
+  font-style: normal;
+  font-weight: 400;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/akademie/nb_akademie_std_regular-webfont.woff2') format('woff2');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Akademie';
+  font-style: normal;
+  font-weight: 500;
+  // sass-lint:disable indentation
+  src: url('../assets/fonts/akademie/nb_akademie_std_medium-webfont.woff2') format('woff2');
+  // sass-lint:enable indentation
+}
+
+@font-face {
+  font-family: 'Alternate Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/alternate/Alternate-Gothic-No2.ttf') format('truetype');
+}

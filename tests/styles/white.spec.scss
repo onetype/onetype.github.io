@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+@include test-module('OneType | Styles :: Functions') {
+  @include describe('The `white` color function') {
+    @include it('returns a valid white color when given valid opacity.') {
+      $test: white(0.6);
+      $expect: rgba(255, 255, 255, 0.6);
+
+      @include assert-equal($test, $expect, 'The white color is either incorrect or does not exist.');
+    }
+  }
+}

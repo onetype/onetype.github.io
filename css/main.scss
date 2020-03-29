@@ -1,0 +1,22 @@
+---
+# OneType Main Styles file
+---
+
+@charset 'utf-8';
+
+@import 'theme/palette';
+@import 'theme/fonts';
+
+@import 'functions/color.white';
+@import 'functions/palette';
+@import 'functions/color.black';
+
+@import 'theme/setup';
+@import 'components/home';
+@import 'components/common';
+@import 'components/book';
+@import 'components/chapter';
+@import 'components/notes';
+@import 'components/caption';
+@import 'components/syntax';
+@import 'components/commit';

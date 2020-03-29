@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+.caption {
+  background-color: palette(beauty-bush);
+  color: palette(cardinal);
+  font-family: 'Consolas', 'Menlo', monospace;
+  font-size: 11px;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  span {
+    opacity: 0.6;
+  }
+}

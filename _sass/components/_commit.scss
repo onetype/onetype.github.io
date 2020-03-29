@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+.commit {
+  border-top: 2px solid palette(cararra);
+  color: palette(go-ben);
+  font-family: 'Akademie';
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 15px;
+  padding-top: 10px;
+
+  a {
+    color: palette(zeus);
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+      //sass-lint:disable nesting-depth
+      &::before {
+        height: 100%;
+      }
+      //sass-lint:enable nesting-depth
+    }
+
+    &::before {
+      background-color: palette(vanilla-ice);
+      bottom: 0;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      position: absolute;
+      transition: all 0.2s ease-in-out; //sass-lint:disable-line no-transition-all
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}

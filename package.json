@@ -1,0 +1,60 @@
+{
+  "name": "onetype",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The official documentation site for OneType.",
+  "main": "index.js",
+  "scripts": {
+    "precoverage": "rimraf coverage",
+    "coverage": "nyc report --reporter=lcov --reporter=html --reporter=text-summary",
+    "codecov": "cat ./coverage/lcov.info | codecov",
+    "lint:scripts": "eslint --config .eslint.json **/*.js",
+    "lint:styles": "sass-lint --config .scss-lint.yml --verbose --no-exit",
+    "pretest": "npm run -s lint:styles && npm run -s lint:scripts",
+    "test": "nyc mocha tests/**.spec.js --require @babel/register",
+    "posttest": "npm run -s coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm t"
+    }
+  },
+  "nyc": {
+    "exclude": [
+      "tests/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onetype/onetype.github.io.git"
+  },
+  "keywords": [
+    "Data Science",
+    "Software Engineering",
+    "Mathematics",
+    "Blog",
+    "Publication"
+  ],
+  "author": "Kyo Euler <@kyoeuler>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onetype/onetype.github.io/issues"
+  },
+  "homepage": "https://github.com/onetype/onetype.github.io#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "chai": "^4.2.0",
+    "codecov": "^3.5.0",
+    "eslint": "^6.3.0",
+    "husky": "^3.0.5",
+    "mocha": "^6.2.0",
+    "node-sass": "^4.12.0",
+    "nyc": "^14.1.1",
+    "rimraf": "^3.0.0",
+    "sass-lint": "^1.13.1",
+    "sass-true": "^5.0.0"
+  }
+}

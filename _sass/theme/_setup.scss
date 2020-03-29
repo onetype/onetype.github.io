@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+::selection {
+  background-color: rgba(palette(cardinal), 0.2); //sass-lint:disable-line no-color-literals
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Adobe Caslon Pro', Helvetica;
+  font-size: 100%;
+}
